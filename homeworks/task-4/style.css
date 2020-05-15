@@ -1,0 +1,164 @@
+@font-face{
+  font-family: Agora Sans;
+  font-weight: 400;
+  font-style: normal;
+  src: local(Agora Sans),
+        url(fonts/PFAgoraSansPro-Regular.woff2) format('woff2');
+}
+
+body {
+   background-color: #ddd;
+   font-family: Agora Sans, sans-serif;
+}
+
+.section1{
+  padding: 40px 0;
+}
+
+.conteiner{
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.form_cont{
+  display:flex;
+  flex-wrap: wrap;
+  box-shadow: 1px 0px 5px 0px;
+}
+
+.or{
+  position: absolute;
+  background-color: #ddd;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 19px;
+  box-shadow: 4px 3px 9px 0px;
+}
+
+h1{
+  color: #808080;
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 35px;
+
+}
+ 
+.form{
+  flex-basis: 50%;
+  background: #fff;
+  padding: 45px 50px 41px 50px;
+  position: relative;
+}
+
+.input{
+  padding: 5px;  
+}
+
+.form p:nth-of-type(n+2){
+  margin-top: 25px;
+} 
+
+input[placeholder]{
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+input.input_form{
+  border-bottom: solid 1px #808484;
+  width: 100%
+}
+
+.submit {
+  background: #189f87;
+  padding: 10px 30px;
+  border-radius: 3px;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 35px;
+  box-shadow: #000 1px 0px 5px 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+ .submit:hover{
+  transform: scale(1.2, 1.2);
+}
+
+.conteiner2{
+  background: url(s1200.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+h2{
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.conteiner2 button{
+  font-size: 15px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  min-width: 80%;
+  transition: all 0.2s ease-in-out;
+}
+.conteiner2 button:hover{
+  transform: scale(1.2, 1.2);
+}
+
+.conteiner2 button:nth-of-type(n+2){
+   margin-top: 25px;
+}
+
+.button_face{
+  background-color: #334f90;
+}
+
+.button_tw{
+  background-color: #57acef;
+}
+
+.button_google{
+  background-color: #dd4c39;
+}
+
+input{
+  border-bottom: solid 3px #808484;
+}
+
+@media screen and (max-width:740px){
+  .form{
+    flex-basis: 100%;
+  }
+
+  .conteiner2{
+    flex-basis: 100%;
+  }
+
+  .or{
+    top: 100%;
+    left: 50%;
+  }
+
+  .conteiner2 button:nth-child(n+3){
+    margin-top: 20px;
+  }
+} 
