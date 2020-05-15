@@ -1,19 +1,6 @@
- *{
- 	box-sizing: border-box;
- }
 
 body{
- 	margin: 0;
-  padding: 0;
  	font-family: sans-serif;
-}
- li {
-  list-style:none;
- }
-
- img{
-  max-width: 100%;
-
 }
  
 .header{
@@ -56,12 +43,11 @@ body{
 a {
   display: inline-block;
   color:#fff;
-  text-decoration:none; 
 }
  
 .ul1 a::after {
-  display: block;
   content: "";
+  display: block;
   height: 3px;
   width: 0;
   background-color: #20d98d;
@@ -249,6 +235,48 @@ figure{
 
   .ulperson li{
     width: 50%;
-    
   }
+
+  figure {
+    margin: 40px;
+  }
+
+  .section3 {
+    padding: 50px 0 100px;
+}
+.h2{
+  margin-bottom: 30px;
+}
+
+}
+
+@media screen and (max-width:740px){
+  .info li{
+    flex-basis: 100%;
+  }
+
+  .header nav, .header img {
+     display: block;
+     margin: 0 auto; 
+  } 
+  
+  .header img{
+     margin-bottom: 30px;
+  }
+
+  .ul1 {
+    text-align: center;
+  }
+
+ .ulperson li{
+    width: 100%;
+  }
+
+  figure {
+    margin: 15px 48px;
+  }
+  .section1 {
+    padding: 100px 0;
+}
+
 }
